@@ -9,6 +9,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { CallLog } from '@ionic-native/call-log/ngx';
+import { CallNumber } from '@ionic-native/call-number/ngx';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -16,6 +19,8 @@ import { AppRoutingModule } from './app-routing.module';
   providers: [
     StatusBar,
     SplashScreen,
+    CallLog,
+    CallNumber,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
